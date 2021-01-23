@@ -1,8 +1,9 @@
+require 'yaml'
+MESSAGES = YAML.load_file('calculator_messages.yml')
+
 def prompt(message)
   Kernel.puts("=> #{message}")
 end
-
-
 
 prompt("Welcome to Mortgage Calculator! Enter your name here:")
 
@@ -32,7 +33,7 @@ loop do
     loan_amount = Kernel.gets().chomp()
 
     if loan_amount.empty?() || loan_amount.to_f() > 0
-      break 
+      break
     else
       prompt("The typed amount contains invalid characters")
     end
@@ -65,22 +66,23 @@ loop do
 
   prompt("Your current loan states the following: ")
 
-  puts "Loan amount" + "=>" + " " + loan_amount + " " + "$"
-  puts "Annual Percentage Rate (APR)" + "=>" + " " + yearly_percentage + " " + "%"
-  puts "Loan duration in years" + "=>" + " " + loan_duration_y + " " + "years"
+  puts "Loan amount => #{loan_amount} $"
+  puts "Annual Percentage Rate (APR) => #{yearly_percentage} %"
+  puts "Loan duration in years #{loan_duration_y} years"
 
   annual_interest_rate = yearly_percentage.to_f() / 100
   monthly_interest_rate = annual_interest_rate / 12
   loan_duration_m = loan_duration_y.to_i() * 12
 
   monthly_payment = loan_amount.to_i() *
-                        (monthly_interest_rate / (1 - (1 + monthly_interest_rate)**(-loan_duration_m)))
+                    (monthly_interest_rate /
+                    (1 - (1 + monthly_interest_rate)**(-loan_duration_m)))
 
   prompt "The monthly payment is %0.2f" % [monthly_payment] + " $"
 
-  prompt("Do you want to perform another mortgage calculation? (Y to calculate again)")
-  answer = Kernel.gets().chomp()
+  prompt(MESSAGES['new_calc'])
+  answer = Kernel.gets().chomp
   break unless answer.downcase().start_with?('y')
 end
 
-prompt("Thank you for using Mortgage Calculator! Goodbye..")
+prompt(MESSAGES['farewell'])

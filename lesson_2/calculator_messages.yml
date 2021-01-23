@@ -1,13 +1,15 @@
-en:
-  welcome: "Welcome to Calculator! Enter your name"
-  valid_name: "Make sure to enter a valid name."
-  hello: "Hello"
-  f_number: "What's the first number?"
-  second_number: "What's the second number?"
-  invalid_number: "This is not a valid number"
-  multiple_choice: "Must choose 1, 2, 3 or 4"
-  new_calc: "Do you want to perform another calculation? (Y to calculate again"
-  farewell: "Thank you for using the calculator. Goodbye!"
-es:
-  welcome: "Bienvenido a la calculadora! Entre su nombre:"
-  valid_name: "Asegúrese de entrar un nombre válido."
+
+#  welcome: "Welcome to Calculator! Enter your name"
+#  valid_name: "Make sure to enter a valid name."
+#  hello: "Hello"
+# f_number: "What's the first number?"
+#  second_number: "What's the second number?"
+#  invalid_number: "This is not a valid number"
+#  multiple_choice: "Must choose 1, 2, 3 or 4"
+
+  new_calc: "Do you want to perform another mortgage calculation? (Y to calculate again)"
+
+  farewell: "Thank you for using Mortgage Calculator! Goodbye.."
+
+#  welcome: "Bienvenido a la calculadora! Entre su nombre:"
+#  valid_name: "Asegúrese de entrar un nombre válido."
