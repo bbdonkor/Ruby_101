@@ -1,0 +1,37 @@
+[1m[1;34mComparable#methods[0m[0m: <  <=  >  >=  between?  clamp
+[1m[1;34mString#methods[0m[0m: 
+  %            delete                 length        squeeze!           
+  *            delete!                lines         start_with?        
+  +            delete_prefix          ljust         strip              
+  +@           delete_prefix!         lstrip        strip!             
+  -@           delete_suffix          lstrip!       sub                
+  <<           delete_suffix!         match         sub!               
+  <=>          downcase               match?        succ               
+  ==           downcase!              next          succ!              
+  ===          dump                   next!         sum                
+  =~           each_byte              oct           swapcase           
+  []           each_char              ord           swapcase!          
+  []=          each_codepoint         partition     to_c               
+  ascii_only?  each_grapheme_cluster  prepend       to_f               
+  b            each_line              pretty_print  to_i               
+  bytes        empty?                 replace       to_r               
+  bytesize     encode                 reverse       to_s               
+  byteslice    encode!                reverse!      to_str             
+  capitalize   encoding               rindex        to_sym             
+  capitalize!  end_with?              rjust         tr                 
+  casecmp      eql?                   rpartition    tr!                
+  casecmp?     force_encoding         rstrip        tr_s               
+  center       freeze                 rstrip!       tr_s!              
+  chars        getbyte                scan          undump             
+  chomp        grapheme_clusters      scrub         unicode_normalize  
+  chomp!       gsub                   scrub!        unicode_normalize! 
+  chop         gsub!                  setbyte       unicode_normalized?
+  chop!        hash                   shellescape   unpack             
+  chr          hex                    shellsplit    unpack1            
+  clear        include?               size          upcase             
+  codepoints   index                  slice         upcase!            
+  concat       insert                 slice!        upto               
+  count        inspect                split         valid_encoding?    
+  crypt        intern                 squeeze     
+[1m[1;34mself.methods[0m[0m: __pry__
+[1m[1;34mlocals[0m[0m: _  __  _dir_  _ex_  _file_  _in_  _out_  pry_instance
